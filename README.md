@@ -62,3 +62,30 @@ A página demonstra os 5 módulos estudados que permitem ao professor:
 │   └── overview.png   # Imagem gerada via IA
 ├── index.html         # Página única (Landing Page)
 └── README.md          # Documentação com transparência de uso de IA
+
+```
+
+## 🚀 Como executar localmente
+
+1. Clone este repositório:
+```bash
+git clone [https://github.com/lgrando1/Portifolio_Santander_EducaIA.git](https://github.com/lgrando1/Portifolio_Santander_EducaIA.git)
+
+```
+
+
+2. Navegue até a pasta do projeto.
+3. Abra o arquivo `index.html` em seu navegador de preferência.
+
+---
+
+## 👨‍🏫 Autor
+
+**Prof. Dr Leonardo Grando**
+
+* *Professor, Pesquisador e Entusiasta de Tecnologia Educacional*
+
+<p align="center">
+<small>Projeto desenvolvido em 2026 • Código co-criado com IA • Revisão Humana Integral</small>
+</p>
+
