@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio do Bootcamp Santander EducaIA - Foco em IA Generativa para Educadores e Otimização de Tempo">
-    <title>Portfólio: EducaIA | Leonardo Grando</title>
+    <meta name="description" content="Portfólio do Bootcamp Santander EducaIA - Prof. Leonardo Grando - Foco em IA Generativa para Educadores">
+    <title>Portfólio EducaIA | Prof. Leonardo Grando</title>
     <style>
         /* --- Variáveis de Estilo --- */
         :root {
-            --primary-color: #ec0000; /* Vermelho Santander/Identity */
+            --primary-color: #ec0000; /* Vermelho Santander */
             --secondary-color: #2D2D2D;
             --background-light: #F8F9FA;
             --text-color: #333;
@@ -40,7 +40,7 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
         }
 
@@ -48,24 +48,46 @@
             font-size: 1.1rem;
             opacity: 0.9;
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        /* --- Botões do Header --- */
+        .buttons-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-website {
+            background-color: var(--white);
+            color: var(--secondary-color);
+        }
+
+        .btn-website:hover {
+            background-color: #e0e0e0;
         }
 
         .btn-github {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 12px 24px;
             background-color: var(--primary-color);
             color: var(--white);
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s, transform 0.2s;
         }
 
         .btn-github:hover {
             background-color: #cc0000;
-            transform: translateY(-2px);
         }
 
         /* --- Layout Principal --- */
@@ -208,9 +230,13 @@
 <body>
 
     <header>
-        <h1>Santander EducaIA: Portfólio</h1>
+        <h1>Portfólio EducaIA | Prof. Leonardo Grando</h1>
         <p>A Jornada do Educador na Era da Inteligência Artificial</p>
-        <a href="https://github.com/lgrando1/Portifolio_Santander_EducaIA" target="_blank" class="btn-github">Acessar Código no GitHub</a>
+        
+        <div class="buttons-container">
+            <a href="https://lgrando1.github.io" target="_blank" class="btn btn-website">🌐 Meu Site Pessoal</a>
+            <a href="https://github.com/lgrando1/Portifolio_Santander_EducaIA" target="_blank" class="btn btn-github">💻 Acessar Código</a>
+        </div>
     </header>
 
     <main class="container">
@@ -313,7 +339,7 @@
     </main>
 
     <footer>
-        <p>Desenvolvido para o Desafio de Projeto DIO | 2024</p>
+        <p>Desenvolvido para o Desafio de Projeto DIO | 2026</p>
         <p class="credits">Código base criado por Gemini (IA) • Revisão Técnica e Pedagógica por Leonardo Grando</p>
     </footer>
 
