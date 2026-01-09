@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio: Plano de Aula com IA | Desafio DIO</title>
+    <style>
+        /* --- Variáveis de Estilo --- */
+        :root {
+            --primary-color: #E6007E; /* Cor inspirada na identidade DIO/Santander */
+            --secondary-color: #2D2D2D;
+            --background-light: #F8F9FA;
+            --text-color: #333;
+            --white: #FFFFFF;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* --- Reset Básico --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .btn-github {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-github:hover {
+            background-color: #c4006b;
+        }
+
+        /* --- Layout Principal --- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* --- Seção de Objetivos --- */
+        .objectives {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .objectives h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .objectives ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .objectives li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Grid de Módulos --- */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .module-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .module-content {
+            padding: 1.5rem;
+        }
+
+        .module-title {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .module-desc {
+            margin-bottom: 1rem;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .module-image {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #eee;
+        }
+
+        .module-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .module-image:hover img {
+            transform: scale(1.02);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsividade --- */
+        @media (min-width: 768px) {
+            .module-card {
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .module-content {
+                flex: 1;
+            }
+
+            .module-image {
+                flex: 1;
+                border-top: none;
+                border-left: 1px solid #eee;
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plano de Aula & Ecossistema IA</h1>
+        <p>Documentação do Desafio Prático - Bootcamp DIO</p>
+        <a href="https://github.com/SEU-USUARIO/SEU-REPOSITORIO" target="_blank" class="btn-github">Ver no GitHub</a>
+    </header>
+
+    <main class="container">
+        
+        <section class="objectives">
+            <h2>Sobre o Projeto</h2>
+            <p>Este portfólio documenta a jornada de aprendizado na construção de um Ecossistema de IA para educação. O objetivo foi dominar ferramentas de Inteligência Artificial Generativa para otimizar o planejamento docente, desde a criação de roteiros até a personalização de feedbacks.</p>
+            <br>
+            <h3>Objetivos Alcançados:</h3>
+            <ul>
+                <li>✅ Compreensão dos fundamentos da IA Generativa aplicada à educação.</li>
+                <li>✅ Domínio de ferramentas como ChatGPT e Microsoft Copilot para produtividade.</li>
+                <li>✅ Criação de planos de aula, slides e materiais didáticos automatizados.</li>
+                <li>✅ Implementação de ética e segurança de dados no uso de ferramentas digitais.</li>
+            </ul>
+        </section>
+
+        <section class="timeline">
+
+            <article class="module-card">
+                <div class="module-content">
+                    <h3 class="module-title">Módulo 01: Fundamentos da IA</h3>
+                    <p class="module-desc">
+                        Introdução essencial ao ecossistema de Inteligência Artificial. Foco em desmistificar conceitos e preparar o ambiente para a utilização de ferramentas generativas no contexto educacional.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">EducaIA</span>
+                        <span class="tag">Conceitos Básicos</span>
+                        <span class="tag">Santander Open Academy</span>
+                    </div>
+                </div>
+                <div class="module-image">
+                    <img src="assets/modulo1.png" alt="Print do Módulo 01 - Essencial para Sair do Zero">
+                </div>
+            </article>
+
+            <article class="module-card">
+                <div class="module-content">
+                    <h3 class="module-title">Módulo 02: Ferramentas na Prática</h3>
+                    <p class="module-desc">
+                        Imersão técnica no uso de ferramentas líderes de mercado. Aprendizado focado em engenharia de prompts para o ChatGPT e Microsoft Copilot, visando a criação ágil de materiais, tradução e adaptação de conteúdo para diferentes níveis de alunos.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Microsoft Copilot</span>
+                        <span class="tag">ChatGPT</span>
+                        <span class="tag">Internacionalização</span>
+                    </div>
+                </div>
+                <div class="module-image">
+                    <img src="assets/modulo2.png" alt="Print do Módulo 02 - Ferramentas na Prática">
+                </div>
+            </article>
+
+            <article class="module-card">
+                <div class="module-content">
+                    <h3 class="module-title">Módulo 03: Criatividade e Planejamento</h3>
+                    <p class="module-desc">
+                        Foco na "Criatividade Turbinada". Utilização da IA para estruturar planos de aula robustos, gerar apresentações visuais impactantes e automatizar a criação de feedbacks personalizados para estudantes.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Planos de Aula</span>
+                        <span class="tag">Slides Visuais</span>
+                        <span class="tag">Feedback Automatizado</span>
+                    </div>
+                </div>
+                <div class="module-image">
+                    <img src="assets/modulo3.png" alt="Print do Módulo 03 - Criatividade Turbinada">
+                </div>
+            </article>
+
+            <article class="module-card">
+                <div class="module-content">
+                    <h3 class="module-title">Módulo 04: Produtividade e Organização</h3>
+                    <p class="module-desc">
+                        A IA como assistente pessoal do educador. Estratégias para planejamento de rotina, gestão inteligente de agenda e automatização de tarefas administrativas repetitivas, liberando tempo para o pedagógico.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Gestão de Agenda</span>
+                        <span class="tag">Automação Administrativa</span>
+                        <span class="tag">Produtividade</span>
+                    </div>
+                </div>
+                <div class="module-image">
+                    <img src="assets/modulo4.png" alt="Print do Módulo 04 - Produtividade">
+                </div>
+            </article>
+
+            <article class="module-card">
+                <div class="module-content">
+                    <h3 class="module-title">Módulo 05: Ética e Segurança</h3>
+                    <p class="module-desc">
+                        Abordagem crítica sobre o uso responsável da tecnologia. Estudos sobre direitos autorais, proteção de dados sensíveis e boas práticas para garantir um uso ético e seguro da IA no ambiente escolar.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Ética Digital</span>
+                        <span class="tag">LGPD & Dados</span>
+                        <span class="tag">Direitos Autorais</span>
+                    </div>
+                </div>
+                <div class="module-image">
+                    <img src="assets/modulo5.png" alt="Print do Módulo 05 - Ética e Segurança">
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Desafio de Projeto DIO | 2024</p>
+    </footer>
+
+</body>
+</html>
